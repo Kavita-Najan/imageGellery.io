@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <h1>Image Gallery</h1>
+
+  <div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+    <button onclick="filterImages('people')">People</button>
+    <button onclick="filterImages('coder')">Coder</button>
+  </div>
+
+  <div class="gallery">
+    <div class="image-box nature"><img src="/image/nature_1.jpg "  alt=""></div>
+    <div class="image-box city"><img src="/image/city_1.jpg  " alt=""></div>
+    <div class="image-box people"><img src="/image/people_1.jpg  " alt=""></div>
+    <div class="image-box coder"><img src="/image/coder_1.jpg " alt=""></div>
+
+    <div class="image-box nature"><img src="/image/nature_2.jpg  " alt=""></div>
+    <div class="image-box city"><img src="/image/city_2.jpg  " alt=""></div>
+    <div class="image-box people"><img src="/image/people_2.jpg  " alt=""></div>
+    <div class="image-box coder"><img src="/image/coder_2.jpg " alt=""></div>
+
+    <div class="image-box nature"><img src="/image/nature_3.jpg  " alt=""></div>
+    <div class="image-box city"><img src="/image/city_3.jpg  " alt=""></div>
+    <div class="image-box people"><img src="/image/people_3.jpg  " alt=""></div>
+    <div class="image-box coder"><img src="/image/coder_3.jpg " alt=""></div>
+    <div class="image-box coder"><img src="/image/coder_5.jpg " alt=""></div>
+
+
+    <div class="image-box nature"><img src="/image/nature_4.jpg  " alt=""></div>
+    <div class="image-box city"><img src="/image/city_4.jpg  " alt=""></div>
+    <div class="image-box people"><img src="/image/people_4.jpg  " alt=""></div>
+     <div class="image-box coder"><img src="/image/coder_4.jpg " alt=""></div>
+
+
+     
+
+
+    <div class="image-box nature"><img src="/image/nature_5.jpg " alt=""></div>
+    <div class="image-box coder"><img src="/image/coder_3.jpg " alt=""></div>
+
+    <div class="image-box city"><img src="/image/city_4.jpg  " alt=""></div>
+    <div class="image-box coder"><img src="/image/coder_1.jpg " alt=""></div>
+
+    <div class="image-box coder"><img src="/image/coder_5.jpg " alt=""></div>
+     <div class="image-box nature"><img src="/image/nature_1.jpg  " alt=""></div>
+     <div class="image-box people"><img src="/image/people_3.jpg" alt=""></div>
+
+            
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="navigation">
+      <button onclick="changeImage(-1)">❮</button>
+      <button onclick="changeImage(1)">❯</button>
+    </div>
+  </div>
+
+
+    
+
+
+    
+    <script src="/app.js"></script>
+</body>
+</html>
